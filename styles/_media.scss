@@ -1,0 +1,503 @@
+@media (min-width: 768px) {
+  .container {
+    padding: 40px 0 0 0;
+    width: 748px;
+  }
+  .header {
+    min-width: 768px;
+    background: url("../images/background_main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+  }
+  .link-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  .logo {
+    margin: 0 0 0 0;
+  }
+  .menu-btn {
+    margin: 0 0 0 0;
+  }
+  .block-text {
+    width: 470px;
+    min-height: 300px;
+    margin: 149px auto;
+    &__title {
+      @include text(52px, 700, 63px, #ffffff);
+    }
+    &__subtitle-block {
+      width: 400px;
+      text-align: center;
+      margin: 14px auto 23px;
+      &_subtitle {
+        @include text(24px, 300, 24px, #f7f3f2);
+      }
+    }
+    &__btn {
+      width: 224px;
+    }
+  }
+  .work__title {
+    margin: 57px auto 37px;
+    width: 286px;
+  }
+  .steps-1 {
+    padding: 206px 20px 16px 19px;
+    width: 236px;
+    height: 400px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url(../images/Step1-tablet.png);
+    margin-bottom: 0;
+    &__title {
+      margin: 0 0 28px 0;
+    }
+  }
+  .steps-2 {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url(../images/Step2-tablet.png);
+    margin-left: 20px;
+    &__btn {
+      padding: 0 0 0 0px;
+      margin: 48px 0px 17px 0px;
+    }
+    &__title {
+      margin-bottom: 24px;
+      margin-left: 1px;
+    }
+  }
+  .steps-3 {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.0001) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      url(../images/Step3-tablet.png);
+    margin-left: 20px;
+  }
+
+  .meet__title {
+    width: 429px;
+    margin: 0 auto;
+    margin-top: 55px;
+    letter-spacing: 1.1px;
+  }
+  .meet__inner {
+    width: 492px;
+    height: 498px;
+    margin: 35px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .meet__item1 {
+    width: 236px;
+    height: 205px;
+  }
+  .meet__item2 {
+    width: 236px;
+    height: 224px;
+  }
+  .meet__item3 {
+    width: 236px;
+    height: 205px;
+  }
+  .meet__item4 {
+    width: 236px;
+    height: 205px;
+  }
+  .meet__btn {
+    width: 180px;
+    margin: 6px auto 55px;
+  }
+  .activity__title {
+    width: 352px;
+  }
+  .activity__inner {
+    display: grid;
+    grid-template-rows: 310px 310px 310px;
+    grid-template-columns: 236px 236px 236px;
+    gap: 20px;
+  }
+  .activity__sport {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity1-tablet.png);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 117px 0 0 0;
+  }
+  .activity__health {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity2-tablet.png);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .activity__expeditions {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity3-tablet.png);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .activity__games {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity4-tablet.png);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .activity__culture {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity5-tablet.png);
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+  .activity__enjomet {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity6-tablet.png);
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .activity__trevelling {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity7-tablet.png);
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  .create__title {
+    width: 320px;
+    margin: 55px auto 54px;
+  }
+  .create__form {
+    display: flex;
+    margin: 24px auto 100px;
+    width: 482px;
+  }
+  .create__input {
+    margin: 0 10px 0 0;
+    width: 299px;
+  }
+  .create__btn {
+    width: 180px;
+    margin: 0;
+  }
+  .footer__wrapper {
+    flex-direction: row;
+  }
+  .footer__link {
+    margin-left: 29px;
+  }
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    text-align: start;
+    &__head{
+      width: 200px;
+      padding: 0 0 0 66px;
+      text-align: start;
+    }
+    &__link-wrapper {
+      width: 200px;
+      padding: 9px 0px 0 65px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin: 0;
+    }
+    &__link {
+      margin: 0;
+    }
+  }
+  .link3 {
+    width: 39px;
+  }
+  .link5 {
+    width: 117px;
+  }
+  .footer__patners {
+    width: 178px;
+    padding: 0 0 0 36px;
+    margin: 0;
+    text-align: start;
+  }
+  .designed{
+    width: 180px;
+    display: flex;
+    flex-direction: column ;
+  }
+  .footer__designed{
+    width: 83px;
+    margin: 0px 0px 5px 70px;
+  }
+  .logo__footer{
+    margin: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+
+.container {
+    width: 940px;
+  }
+.header{
+    min-width: 1024px;
+    background-size: cover;
+    background-position: center center ;
+  }
+  .link-wrapper {
+    padding: 0 40px 0 0;
+  }
+  .logo{
+    font-size: 20px;
+  }
+  .work__title {
+    margin: 50px auto 34px;
+    letter-spacing: 1.5px;
+    width: 345px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .steps-1 {
+    padding: 206px 20px 16px 25px;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.0001) 0%,rgba(0, 0, 0, 0.6) 100%), url(../images/Step1-desktop.png);
+      &__btn{
+        margin: 11px 0px 24px 0;
+      }
+      &__title {
+        line-height: 26px;
+        margin: 0 0 26px 0;
+      }
+  }
+  .steps-2 {
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0.0001) 0%,rgba(0, 0, 0, 0.6) 100%),url(../images/Step2-desktop.png);
+    margin-left: 20px;
+    &__btn {
+      margin: 44px 0px 24px 0px;
+    }
+    &__title {
+      margin-bottom: 17px;
+      margin-left: 1px;
+    }
+    &__text{
+      letter-spacing: 0.2px;
+    }
+  }
+  .steps-3 {
+    background: linear-gradient( 180deg,rgba(0, 0, 0, 0.0001) 0%,rgba(0, 0, 0, 0.6) 100%),url(../images/Step3-desktop.png);
+  }
+  .meet__title{
+    width: 500px;
+    margin-top: 50px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .meet__inner {
+    width: 940px;
+    height: 253px;
+  }
+  .meet__item1{
+    width: 221px;
+    height: 205px;
+    order: 1;
+  }
+  .meet__item2{
+    width: 221px;
+    height: 205px;
+    order: 3;
+    & > p {
+      margin: 25px auto 17px;
+    }
+  }
+  .meet__item3{
+    width: 221px;
+    height: 224px;
+    order: 2;
+  }
+  .meet__item4{
+    width: 221px;
+    height: 224px;
+    order: 4;
+    & > p {
+      margin-top: 24px;
+    }
+  }
+  .meet__name{
+    margin-top: 19px;
+  }
+  .meet__text {
+    width: 221px;
+  }
+  .meet__btn{
+    margin: 6px auto 50px;
+  }
+  .activity__title{
+    width: 427px;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0px auto 34px;
+
+  }
+  .activity__inner {
+    grid-template-columns: 300px 300px 300px;
+  }
+
+  .activity__sport {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity1-desktop.png);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 143px 0 0 0;
+    & > h4{
+      width: 228px;
+    }
+  }
+  .activity__health {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity2-desktop.png);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    & > h4{
+      width: 300px;
+    }
+  }
+  .activity__expeditions {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity3-desktop.png);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    & > h4{
+      width: 195px;
+    }
+  }
+  .activity__games {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity4-desktop.png);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .activity__culture {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity5-desktop.png);
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+  .activity__enjomet {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity6-desktop.png);
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  .activity__trevelling {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/activity7-desktop.png);
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+  .create__title {
+    font-size: 26px;
+    line-height: 32px;
+    width: 500px;
+    margin: 50px auto 53px;
+  }
+  .footer__wrapper{
+    justify-content: space-between;
+  }
+  .footer__link {
+    margin: 0;
+  }
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    text-align: start;
+    &__head{
+      width: 200px;
+      padding: 0 0 0 38px;
+      text-align: start;
+    }
+    &__link-wrapper {
+      width: 200px;
+      padding: 9px 0px 0 38px;
+     
+    }
+  }
+  .footer__patners {
+
+    padding: 0;
+  }
+  .footer__designed{
+    width: 83px;
+    margin: 0px 0px 5px 100px;
+  }
+  .logo-footer{
+    margin: 0 0 0 70px;
+  }
+}

@@ -1,0 +1,537 @@
+@import "base/reset";
+@import "base/fonts";
+@import "base/vars";
+@import "base/mixins";
+.container {
+  padding: 20px 0px 0 0;
+  width: 300px;
+  margin: 0 auto;
+}
+.header {
+  min-width: 320px;
+  margin: 0 auto;
+  background: url("../images/background_main.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 540px;
+}
+.menu-btn {
+  width: 153px;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  &__login {
+    color: #ffffff;
+    background: none;
+    padding: 11px 0px;
+    margin-right: 19px;
+    border: none;
+  }
+  &__signup {
+    width: 90px;
+    height: 36px;
+    color: #ffffff;
+    background: none;
+    padding: 9px 0px;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+  }
+}
+.logo {
+  width: 145px;
+  margin: 97px auto 26.5px;
+  &__link {
+    @include text(21px, 700, 24px, #ffffff);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+.block-text {
+  width: 281px;
+  height: 234px;
+  margin: 0 auto 153px;
+  text-align: $a;
+  &__title {
+    @include text(30px, 700, 37px, #ffffff);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+  }
+  &__subtitle-block {
+    width: 279px;
+    height: 49px;
+    margin: 6px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_subtitle {
+      @include text(18px, 300, 24px, #F7F3F2);
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+  &__btn {
+    border-radius: $radius;
+    background-color: $bg-pink;
+    border: none;
+    width: 282px;
+    height: 40px;
+    color: $white;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+  }
+}
+.work__title {
+  margin: 17px 7px;
+  @include text(22px, 700, 22px, #444444);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.work__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto 0;
+}
+.steps-1 {
+  padding: 64px 30px 16px 20px;
+  height: 240px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/Step1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  &__btn {
+    width: 70px;
+    height: 20px;
+    border-radius: $radius;
+    background-color: $bg-pink;
+    padding: 0 0 0 4px;
+    margin: -2px 0px 48px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    @include text(10px, 400, 12px, #ffffff);
+    font-family: 'Montserrat', sans-serif;
+  }
+  &__title {
+    @include text(24px, 700, 14px, #ffffff);
+    margin: 0 0 24px 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+  }
+  &__text {
+    @include text(14px, 300, 14px, #e3e3e3);
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.steps-2 {
+  @extend .steps-1;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/Step2.jpg);
+  &__btn {
+    @extend .steps-1__btn;
+    padding: 0 0 0 0px;
+    margin: 30px 0px 31px 0;
+  }
+  &__title {
+    @extend .steps-1__title;
+    letter-spacing: 1px;
+  }
+  &__text {
+    @extend .steps-1__text;
+  }
+}
+.steps-3 {
+  @extend .steps-1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/Step3.jpg);
+  &__btn {
+    @extend .steps-1__btn;
+  }
+  &__title {
+    @extend .steps-1__title;
+  }
+  &__text {
+    @extend .steps-1__text;
+  }
+}
+.meet__title {
+  width: 300px;
+  letter-spacing: 1px;
+  margin: 8px 0 0 0;
+  text-align: center;
+  @include text(22px, 700, 26px, $gray);
+  font-family: 'Montserrat', sans-serif;
+}
+.meet__inner{
+  margin-top: 14px;
+}
+.meet__person_avatar1 {
+  background-image: url(../images/avatar1.png);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.meet__person_avatar1::after {
+  content: url(../icons/avatar1.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 3px 4px 0 0;
+  background-color: $bg-pink;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: 84px;
+  right: -4px;
+}
+.meet__person_avatar2 {
+  @extend .meet__person_avatar1;
+  background-image: url(../images/avatar2.png);
+  
+}
+.meet__person_avatar2::after {
+  content: url(../icons/avatar2.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  background-color: #ffa710;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: 84px;
+  right: -4px;
+  padding-left: 3px;
+}
+.meet__item2{
+  & > h3{
+    letter-spacing: 1px;
+  }
+  & > p{
+    width: 232px;
+    line-height: 14px;
+    text-align: center;
+    margin: 25px auto 17px;
+  }
+}
+.meet__person_avatar3 {
+  @extend .meet__person_avatar1;
+  background-image: url(../images/avatar3.png);
+}
+.meet__person_avatar3::after {
+  content: url(../icons/avatar3.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  background-color: #19d4ca;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: 84px;
+  right: -4px;
+}
+.meet__item3{
+  & > h3{
+    line-height: 19px;
+  }
+  & > p{
+    width: 232px;
+    line-height: 14px;
+    text-align: center;
+    margin: 20px auto 15px;
+  }
+}
+.meet__person_avatar4 {
+  @extend .meet__person_avatar1;
+  background-image: url(../images/avatar4.png);
+}
+.meet__person_avatar4::after {
+  content: url(../icons/avatar4.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 4px 0 0 0;
+  background-color: #667df3;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+  position: absolute;
+  top: 84px;
+  right: -4px;
+}
+
+.meet__name {
+  @include text(14px, 700, 17px, $gray);
+  text-align: center;
+  margin-top: 19px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+.meet__text {
+  width: 241px;
+  @include text(14px, 300, 14px, #666666);
+  text-align: center;
+  margin: 21px auto 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.meet__btn {
+  width: 280px;
+  height: 40px;
+  border: 2px solid $bg-pink;
+  border-radius: 40px;
+  display: block;
+  margin: 36px auto 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  overflow: hidden;
+}
+.meet__link {
+  @include text(14px, 700, 17px, $bg-pink);
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+.activity__title {
+  width: 257px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto 33px;
+  @include text(22px, 700, 27px, $gray);
+  font-family: 'Montserrat', sans-serif;
+}
+.activity__inner {
+  display: grid;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+  gap: 10px;
+}
+.activity__sport {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  & > h4{
+    width: 137px;
+    letter-spacing: 1px;
+  }
+}
+.activity__health {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  h4 {
+    width: 200px;
+    letter-spacing: 1px;
+  }
+}
+.activity__expeditions {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity3.jpg);
+  @extend .activity__health;
+  h4 {
+    width: 200px;
+    letter-spacing: 1px;
+  }
+}
+.activity__games {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity4.jpg);
+  @extend .activity__health;
+  letter-spacing: 1px;
+}
+.activity__culture {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity5.jpg);
+  @extend .activity__health;
+  h4 {
+    width: 272px;
+    letter-spacing: 1px;
+  }
+}
+.activity__enjomet {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity6.jpg);
+  @extend .activity__health;
+  h4 {
+    width: 272px;
+    letter-spacing: 1px;
+  }
+}
+.activity__trevelling {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/activity7.jpg);
+  @extend .activity__health;
+  letter-spacing: 1px;
+}
+.activity__name {
+  @include text(22px, 700, 27px, $white);
+  width: 103px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.create__title {
+  width: 212px;
+  text-align: center;
+  margin: 15px auto 19px;
+  @include text(22px, 700, 27px, $gray);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+.create__text {
+  @include text(17px, 300, 14px, #666666);
+  margin: 0 auto;
+  width: 275px;
+  letter-spacing: 0.1px;
+  font-family: 'Roboto', sans-serif;
+}
+.create__input {
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin: 15px auto 10px;
+  padding: 3px 0 0 14px;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+  border-radius: 3px;
+}
+.create__input::placeholder {
+  @include text(14px, 300, 16px, #999999);
+  font-family: 'Roboto' , sans-serif;
+}
+.create__btn {
+  width: 280px;
+  height: 40px;
+  display: block;
+  padding: 3px 0 0 11px;
+  margin: 0 auto 41px;
+  border-radius: $radius;
+  border: none;
+  background-color: $bg-pink;
+  @include text(14px, 700, 17px, $white);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+.footer {
+  border-top: 2px solid $bg-pink;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__link {
+    text-align: center;
+    text-decoration: none;
+    color: $bg-pink;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 16px 0px 6px 0px;
+  &__head {
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    @include text(14px, 700, 17px, $gray);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+  }
+  &__link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    height: 52px;
+    margin: 0 auto;
+    padding: 0 9px 0 10px;
+  }
+  &__link {
+    text-decoration: none;
+    width: 50px;
+    @include text(14px, 300, 26px, #999999);
+    font-family: 'Roboto' , sans-serif;
+  }
+}
+.link1 {
+  width: 40px;
+  margin-left: 34px;
+}
+.link2 {
+  width: 50px;
+  margin-left: 11px;
+}
+.link3 {
+  width: 35px;
+  margin-left: 13px;
+}
+.link4 {
+  width: 32px;
+  margin-left: 11px;
+}
+.link5 {
+  width: 133px;
+  margin-left: 43px;
+}
+.link6 {
+  width: 32px;
+}
+.footer__patners {
+  @extend .navbar__head;
+  font-family: 'Montserrat', sans-serif;
+}
+.footer__designed {
+  @include text(10px, 700, 12px, #cccccc);
+  letter-spacing: 1px;
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 14px auto 7px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+.logo-footer {
+  width: 110px;
+  height: 24px;
+  margin: 0 auto 22px;
+}
+
+@import "media";
